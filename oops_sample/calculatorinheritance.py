@@ -6,25 +6,33 @@
 @Title :  sample program to perform calculator using oops concept of inheritance
 
 '''
-if __name__ == '__main__':
+
     
-    class Calculator:
+class Calculator:
 
-        def add(self,a,b):
-            first_num = input("enter first element")
-            second_num = input("enter second element")
-            print("addition of numbers method from base class ", first_num + second_num)
- 
+    def __init__(self):
+      #  self.a = a
+       # self.b = b
+        print("this is inside parent class")
+
+    def add(self,a,b):
+       
+        print("value", a+b)
+
+    
+class Child(Calculator):
+
+    def specific(self):
+        print("in child class")
+        
+    def  result(self):
+            print("done with child class")
+
+if __name__ == '__main__':  
+     
+    a = int(input("enter a value"))
+    b = int(input("enter b value"))      
     calci = Calculator()
-    class Child(Calculator):
-
-        def __init__(self,numberoftimes):
-            print("in child class")
-            self.numberoftimes = 9
-        def  result(self):
-             print("done with child class")
-            
-        calci.add
-
-
+    calci.add(a,b)
+    
                     
