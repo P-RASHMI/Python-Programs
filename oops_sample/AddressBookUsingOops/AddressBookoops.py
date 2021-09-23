@@ -17,6 +17,9 @@ if __name__ == '__main__':
             print("2.Edit the contacts in Address Book")
             print("3.Delete the contacts from Address Book") 
             print("4.Display Address Book") 
+            print("5.Write Address book in json")
+            print("6.read Address Book from json") 
+            print("7.Exit")
             choice = int(input())            
             if choice == 1:
                 book_obj.add_contact()
@@ -26,6 +29,10 @@ if __name__ == '__main__':
                 book_obj.delete_contact()
             elif choice == 4:
                 book_obj.display_contact()
+            elif choice == 5:
+                book_obj.write_in_json()
+            elif choice == 6:
+                book_obj.read_from_json()
             else:
                 break
     except ValueError as e:
