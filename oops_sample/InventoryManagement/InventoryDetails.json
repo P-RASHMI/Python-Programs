@@ -1,6 +1,10 @@
 {
   "rice": {
-    "Name": "bas",
+    "Name": "brown",
     "Price": 10
+  },
+  "pulses": {
+    "Name": "green",
+    "Price": 20
   }
 }
