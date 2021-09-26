@@ -1,0 +1,8 @@
+
+{
+    "PER_HR_WAGE"  : 20,
+    "FULL_DAY_HR" : 8,
+    "PART_TIME_HR" : 4,
+    "MONTHLY_DAYS" : 20,
+    "MONTHLY_HR" : 100
+}
